@@ -1,0 +1,115 @@
+.Products {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.ProductList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    border: 1px solid rgba(68, 139, 245, 0.75);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+.timeTracker {
+    transform: rotate(-90deg);
+    margin-top: 20px;
+    width: 10%;
+    height: 50px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: rgba(128, 128, 128, 0.507);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.timeTracker::-webkit-progress-bar {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* border-radius: 10px; */
+}
+
+.timeTracker::-webkit-progress-value {
+    background-color: rgba(53, 207, 86, 0.75);
+    /* border-radius: 10px; */
+}
+
+.timeTracker::-moz-progress-bar {
+    background-color: rgba(0, 102, 255, 0.75);
+    /* border-radius: 10px; */
+}
+
+input {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+img {
+    width: 60px;
+    height: auto;    
+    padding: 5px; 
+}
+
+li {
+    display: none;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+table {
+    position: relative; /* Required for pseudo-elements */
+    width: 95%;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    background-color: rgba(255, 255, 255, 0.015); /* Semi-transparent background */
+    backdrop-filter: blur(7px); /* Blurs the background behind the table */
+    border-radius: 10px;
+    padding: 10px;
+    /* overflow: hidden; Ensures the pseudo-element doesn't overflow   */
+}
+
+table::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Places it behind the table */
+    background-color: rgba(200, 200, 255, 0.479); /* Inherits the table's background */
+    filter: blur(20px); /* Creates the blur effect */
+    margin: -40px; /* Extends the blur beyond the table edges */
+    border-radius: inherit; /* Matches the table's border radius */
+}
+
+thead {
+    background-color: rgb(68, 138, 245);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    /* padding: 10px; */
+    /* border-bottom: 1px solid rgb(255, 255, 255); */
+}
+
+
+
+td {
+    /* width: 33%;   */
+    
+    
+    text-align: center;
+    padding: 10px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+    
+}
+

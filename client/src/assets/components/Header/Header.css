@@ -1,0 +1,39 @@
+.Header {
+
+}
+
+.HeaderMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background-color: rgba(73, 73, 73, 0);
+    border-bottom: 1px solid rgb(68, 138, 245);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.4);
+    color: rgb(197, 197, 197);
+    margin-bottom: 20px;
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+i {
+    font-size: 35px;
+    color: rgba(100, 123, 255, 0.50);
+    position: relative; /* Required for the pseudo-element */
+}
+
+i::before {
+    content: '';
+    position: absolute;
+    width: 50px; /* Adjust size of the circle */
+    height: 50px; /* Adjust size of the circle */
+    background: linear-gradient(10deg, #6b6b6b00, #ffffff00); /* Creates a 3D gradient effect */
+    border-radius: 50%; /* Makes it a circle */
+    
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3), 
+                inset 0px -10px 10px rgba(170, 164, 255, 0.5); /* Adds depth */
+    top: 50%; /* Centers the circle vertically */
+    left: 50%; /* Centers the circle horizontally */
+    transform: translate(-50%, -50%); /* Adjusts for the circle's size */
+    z-index: -1; /* Places the circle behind the icon */
+}
