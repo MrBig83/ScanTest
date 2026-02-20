@@ -1,9 +1,4 @@
-# /node_modules
-# .server-node/node_modules
-# /server-node/node_modules
-/server-node/.env
 node_modules
-/.env
 .env
 .env.local
 
