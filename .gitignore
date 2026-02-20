@@ -1,9 +1,11 @@
-/node_modules
-.server-node/node_modules
-/server-node/node_modules
+# /node_modules
+# .server-node/node_modules
+# /server-node/node_modules
+/server-node/.env
 node_modules
 /.env
-
+.env
+.env.local
 
 Barcode-test.txt
 Barcode.png
