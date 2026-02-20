@@ -1,7 +1,12 @@
 /node_modules
+.server-node/node_modules
+/server-node/node_modules
+node_modules
 /.env
 
-/server/node_modules
 
 Barcode-test.txt
 Barcode.png
+
+appsettings.Development.json
+appsettings.json
